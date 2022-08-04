@@ -28,22 +28,24 @@ body {
 .containerm p {
     text-align: center;
     line-height: 1;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
 }
 
 .package {
-    min-height: 120vh;
+    min-height: fit-content;
      text-align: center; 
+     justify-items: center;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     padding-top: 5rem;
+    justify-content: center;
 }
 
-.icon {
+.content .icon {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,23 +53,20 @@ body {
     padding-bottom: 1rem;
 }
 
-.cont {
-    padding-left: 11rem;
-    justify-items: center;
-}
 
-.cont h3 {
+
+.content h3 {
     font-size: 2.7rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.2;
     font-weight: 800;
 }
 
-.cont P {
+.content p {
     padding-top: 1.3rem;
     line-height: 1.7;
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .discover {
@@ -87,11 +86,11 @@ body {
     font-weight: 800;
 }
 
-.cont2 P {
+.cont2 p {
     padding-top: 1.3rem;
     line-height: 1.7;
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .icon2 {
@@ -110,21 +109,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    justify-content: center;
 }
 
 .icon3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding-left: 1rem; */
     padding-bottom: 1rem;
     margin-top: 4rem;
 }
 
-.cont3 {
+/* .cont3 {
     padding-left: 11rem;
     justify-items: center;
-}
+} */
 
 .cont3 h3 {
     font-size: 2.7rem;
@@ -133,11 +132,11 @@ body {
     font-weight: 800;
 }
 
-.cont3 P {
+.cont3 p {
     padding-top: 1.3rem;
     line-height: 1.7;
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .discover {
@@ -156,11 +155,11 @@ body {
     font-weight: 800;
 }
 
-.cont4 P {
+.cont4 p {
     padding-top: 1.3rem;
     line-height: 1.7;
-    font-size: 1.1rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .icon4 {
@@ -176,9 +175,10 @@ body {
     color: orangered;
 }
 
-.comment {
+/* .comment {
     display: flex;
-}
+    flex-wrap: wrap;
+} */
 
 .package2 {
     min-height: 100vh;
@@ -191,6 +191,8 @@ body {
     padding-top: 5rem;
     margin-left: 4rem;
     border-radius: 13rem;
+    justify-content: center;
+    /* width: 5rem; */
 }
 
 .comment-circle {
@@ -265,15 +267,15 @@ body {
 
 .comment1 {
     border: 1px solid #ffffff;
-    height: 80vh;
-    width: 30%;
+    height: 70vh;
+    min-width: 25%;
     box-shadow: 2px 2px 2px 2px grey;
     background-color: white;
 }
 
 .comment1 p {
     padding-top: 5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.7;
     color: black;
     font-style: italic;
@@ -289,14 +291,14 @@ body {
     margin-top: 1rem;
     margin-left: 8.5rem;
     margin-right: 8.5rem;
-    height: 0.3rem;
+    /* height: 0.3rem; */
     background-color: orangered;
 }
 
 .comment2 {
     border: 1px solid #ffffff;
-    height: 80vh;
-    width: 30%;
+    height: 70vh;
+    min-width: 25%;
     margin-left: 2rem;
     background-color: white;
     box-shadow: 2px 2px 2px 2px grey;
@@ -320,14 +322,14 @@ body {
     margin-top: 1rem;
     margin-left: 8.5rem;
     margin-right: 8.5rem;
-    height: 0.3rem;
+    /* height: 0.3rem; */
     background-color: orangered;
 }
 
 .comment3 {
     border: 1px solid #ffffff;
-    height: 80vh;
-    width: 30%;
+    height: 70vh;
+    min-width: 25%;
     margin-left: 2rem;
     background-color: white;
     box-shadow: 2px 2px 2px 2px grey;
@@ -335,7 +337,7 @@ body {
 
 .comment3 p {
     padding-top: 5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.7;
     color: black;
     font-style: italic;
@@ -351,7 +353,7 @@ body {
     margin-top: 1rem;
     margin-left: 8.5rem;
     margin-right: 8.5rem;
-    height: 0.3rem;
+    /* height: 0.3rem; */
     background-color: orangered;
 }
 .footer{
@@ -362,17 +364,18 @@ body {
 
 @media screen and (max-width:500px) {
     .containerm {
-        height: 70vh;
+        height: 30vh;
     }
 
     .containerm h1 {
         font-weight: 600;
-        font-size: 3rem;
+        font-size: 3.5rem;
         padding-top: 6rem;
     }
 
     .containerm p {
-        font-size: 1rem;
+        line-height: 1.7;
+        font-size: 1.3rem;
     }
 
     .cont {
@@ -391,4 +394,125 @@ body {
     .cont4 {
         padding-left: 4rem;
     }
+    .comment{
+        flex-direction: column;
+    }
+    .comment1{
+        max-width: 25rem;
+        max-height: 50vh;
+        margin-left:-25px;
+    }
+    .comment1 p {
+        /* padding-top: 5rem; */
+        font-size: 1rem;
+        line-height: 1.7;
+        color: black;
+        font-style: italic;
+    }
+    .comment-circle {
+        border: 3px solid orangered;
+        right: 0;
+        top: 2rem;
+        left: -1rem;
+        bottom: 0;
+        width: 110px;
+        height: 110px;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 110%;
+        background-color: rgb(16, 16, 203);
+        position: relative;
+        transform: translateX(10rem);
+    }
+    
+    .comment-image {
+        background-image: url(./images/nkan.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .comment1 h4 {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .comment2{
+        max-width: 25rem;
+        max-height: 50vh;
+        margin-top: 2rem;
+        margin-left:-25px;
+        /* font-size: 0.5rem; */
+    }
+    .comment-circle2 {
+        border: 3px solid orangered;
+        right: 0;
+        top: 2rem;
+        left: -1rem;
+        bottom: 0;
+        width: 110px;
+        height: 110px;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 110%;
+        background-color: rgb(16, 16, 203);
+        position: relative;
+        transform: translateX(10rem);
+    }
+    
+    .comment-image2 {
+        background-image: url(./images/philemon.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .comment2 p {
+        /* padding-top: 5rem; */
+        font-size: 1rem;
+        line-height: 1.7;
+        color: black;
+        font-style: italic;
+    }
+    .comment2 h4 {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .comment3{
+        max-width: 25rem;
+        max-height: 50vh;
+        margin-left:-25px;
+        margin-top: 2rem;
+    }
+    .comment-circle3 {
+        border: 3px solid orangered;
+        right: 0;
+        top: 2rem;
+        left: -1rem;
+        bottom: 0;
+        width: 110px;
+        height: 110px;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 110%;
+        background-color: rgb(16, 16, 203);
+        position: relative;
+        transform: translateX(10rem);
+    }
+    
+    .comment-image3 {
+        background-image: url(./images/esther.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .comment3 p {
+        /* padding-top: 5rem; */
+        font-size: 1rem;
+        line-height: 1.7;
+        color: black;
+        font-style: italic;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    
 }
